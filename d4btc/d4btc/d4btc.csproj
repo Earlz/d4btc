@@ -20,6 +20,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="/usr/local/bin/mono-t4 ${ProjectDir}/views/ViewEngine.tt ${ProjectDir}/views/ViewEngine.tt" workingdir="${ProjectDir}/views" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -28,6 +33,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="/usr/local/bin/mono-t4 ${ProjectDir}/views/ViewEngine.tt ${ProjectDir}/views/ViewEngine.tt" workingdir="${ProjectDir}/views" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -67,7 +77,6 @@
     <Compile Include="views\ViewEngine.cs">
       <DependentUpon>ViewEngine.tt</DependentUpon>
     </Compile>
-    <Compile Include="views\ViewEngineInternal.tt.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="views\" />
@@ -78,5 +87,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ViewEngine.cs</LastGenOutput>
     </None>
+    <None Include="views\ViewEngineInternal.tt.cs" />
   </ItemGroup>
 </Project>

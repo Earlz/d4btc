@@ -8,6 +8,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{44
 		database\init.sql = database\init.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoind", "Bitcoind\Bitcoind.csproj", "{D2BAD380-BC4E-46E2-A03F-298973C94C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d4btc.Test", "d4btc.Test\d4btc.Test.csproj", "{F125E282-6005-4E4B-8D69-4B405273B51D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +22,14 @@ Global
 		{938AF9BE-1180-4C27-A052-960085380B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938AF9BE-1180-4C27-A052-960085380B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{938AF9BE-1180-4C27-A052-960085380B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BAD380-BC4E-46E2-A03F-298973C94C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BAD380-BC4E-46E2-A03F-298973C94C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BAD380-BC4E-46E2-A03F-298973C94C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BAD380-BC4E-46E2-A03F-298973C94C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F125E282-6005-4E4B-8D69-4B405273B51D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F125E282-6005-4E4B-8D69-4B405273B51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F125E282-6005-4E4B-8D69-4B405273B51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F125E282-6005-4E4B-8D69-4B405273B51D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

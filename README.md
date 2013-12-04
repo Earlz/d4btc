@@ -37,6 +37,15 @@ Fourth, minimal risk. Ideally, even zero risk. By minimal risk, I mean if an att
 
 They could possibly install malware into your site or some such, but you should have proper monitoring for that type of risk. That is unavoidable. 
 
+## Compiling
+
+There is a prebuild event to automatically regenerate the T4 view templates. If using Visual Studio, you can remove this Just make sure to run the T4 template ViewGenerator.tt when changing the HTML views. Under Linux, I expect for there to be the file /usr/local/bin/mono-t4. You must add this in yourself. The contents for most Linux distros is this:
+
+    #!/bin/sh
+    mono /usr/lib/monodevelop/AddIns/MonoDevelop.TextTemplating/TextTransform.exe -o $1 $2
+Make sure to make it executable.
+
+
 ## Donations
 
 If you feel like donating to motivate me, my address is 178DgR2aZcHeYHhXZwtvcJ5RD13Y6YMQBf. :)
