@@ -1,3 +1,5 @@
+using Earlz.LucidMVC;
+
 
 namespace Earlz.d4btc
 {
@@ -19,8 +21,27 @@ namespace Earlz.d4btc
 
         protected void Application_BeginRequest(Object sender, EventArgs e)
         {
+            if(router==null)
+            {
+                InitRouter();
+            }
+            if(router.Execute(new AspNetServerContext()))
+            {
+                CompleteRequest();
+            }
         }
+        Router router;
+        object routerinit=new object();
+        void InitRouter()
+        {
+            lock(routerinit)
+            {
+                router=new Router();
 
+                var landing=router.Controller((c) => new LandingController(c));
+                landing.Handles("/").With(x=>x.Landing());
+            }
+        }
         protected void Application_EndRequest(Object sender, EventArgs e)
         {
         }

@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="static\style.css" />
+    <Content Include="views\LayoutView.html" />
+    <Content Include="views\LandingView.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -77,10 +79,12 @@
     <Compile Include="views\ViewEngine.cs">
       <DependentUpon>ViewEngine.tt</DependentUpon>
     </Compile>
+    <Compile Include="controllers\LandingController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="views\" />
     <Folder Include="static\" />
+    <Folder Include="controllers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="views\ViewEngine.tt">
