@@ -52,6 +52,7 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Npgsql" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -80,6 +81,7 @@
       <DependentUpon>ViewEngine.tt</DependentUpon>
     </Compile>
     <Compile Include="controllers\LandingController.cs" />
+    <Compile Include="SqlMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="views\" />
