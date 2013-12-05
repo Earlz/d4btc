@@ -1,5 +1,7 @@
 using System;
 using Npgsql;
+using Earlz.Bitcoind;
+using System.Net;
 
 namespace Earlz.d4btc
 {
@@ -11,6 +13,19 @@ namespace Earlz.d4btc
             var c = new NpgsqlConnection(ConnectionString);
             c.Open();
             return c;
+        }
+        static IBitcoind bitcoind;
+        static public IBitcoind Bitcoind
+        {
+            get
+            {
+                if (bitcoind == null)
+                {
+                    var cred = new NetworkCredential(ConfigData.Get().RpcUser, ConfigData.Get().RpcPassword);
+                    bitcoind = new Btcd(ConfigData.Get().RpcUrl, cred);
+                }
+                return bitcoind;
+            }
         }
     }
 }

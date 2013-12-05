@@ -250,6 +250,15 @@ __OutputVariable(__v);
 }
 __Write(@"
     </div>
+    <div id=""footer"">
+        ");
+if(ConfigData.Get().Testnet){
+__Write(@"
+            Currently configured for bitcoin testnet!
+        ");
+}
+__Write(@"
+    </div>
     </body>
 </html>
 ");

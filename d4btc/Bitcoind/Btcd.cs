@@ -7,9 +7,9 @@ using System.IO;
 
 namespace Earlz.Bitcoind
 {
-    public class Bitcoind : IBitcoind
+    public class Btcd : IBitcoind
     {
-        public Bitcoind (string url, ICredentials credentials)
+        public Btcd(string url, ICredentials credentials)
         {
             Url = url;
             Credentials = credentials;

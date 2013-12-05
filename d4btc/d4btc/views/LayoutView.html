@@ -15,5 +15,10 @@
     <div id="content">
         {=Content=}
     </div>
+    <div id="footer">
+        {!if ConfigData.Get().Testnet!}
+            Currently configured for bitcoin testnet!
+        {!endif!}
+    </div>
     </body>
 </html>

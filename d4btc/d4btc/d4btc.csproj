@@ -98,4 +98,10 @@
     </None>
     <None Include="views\ViewEngineInternal.tt.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bitcoind\Bitcoind.csproj">
+      <Project>{D2BAD380-BC4E-46E2-A03F-298973C94C1A}</Project>
+      <Name>Bitcoind</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
