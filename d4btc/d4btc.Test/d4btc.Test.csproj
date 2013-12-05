@@ -53,4 +53,7 @@
       <Name>d4btc</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmptyClass.cs" />
+  </ItemGroup>
 </Project>

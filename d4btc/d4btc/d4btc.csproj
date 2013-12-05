@@ -82,11 +82,14 @@
     </Compile>
     <Compile Include="controllers\LandingController.cs" />
     <Compile Include="SqlMapper.cs" />
+    <Compile Include="DataLayer\ConfigData.cs" />
+    <Compile Include="DataLayer\DataLayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="views\" />
     <Folder Include="static\" />
     <Folder Include="controllers\" />
+    <Folder Include="DataLayer\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="views\ViewEngine.tt">

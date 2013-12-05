@@ -11,7 +11,7 @@ namespace Earlz.d4btc
         }
         public LandingView Landing()
         {
-            return new LandingView();
+            return new LandingView { SiteName = ConfigData.Get().SiteName };
         }
     }
 }

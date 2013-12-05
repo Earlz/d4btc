@@ -23,7 +23,15 @@ namespace Earlz.d4btc.Views{
                 ///<summary>
         ///
         ///</summary>
-            public string key{
+            public string Key{
+        get;
+        set;
+        }
+
+                ///<summary>
+        ///
+        ///</summary>
+            public string SiteName{
         get;
         set;
         }
@@ -54,7 +62,16 @@ __Write(@"
 ");
 __Write(@"
     <div id=""landing-content"">
-        <h1>d4btc store </h1>
+        <h1>");
+{
+                object __v;
+                
+
+                    __v=SiteName;
+                
+__OutputVariable(__v);
+}
+__Write(@"</h1>
         <p>
         Is it done yet?
         </p>
