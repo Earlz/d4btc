@@ -1,6 +1,7 @@
 //get index
 require('./../config');
 var bitcoin=require('bitcoin').bitcoin;
+var knex=require('knex').knex;
 
 //var bookshelf=require('bookshelf').bookshelf;
 
@@ -13,7 +14,9 @@ exports.index = function(req, res){
     }else{
       testnet='nope.. you must be crazy';
     }
-    res.render('index', { title: 'Express', testnet: testnet });
+    var c=knex('config').select().then(function(k){
+      res.render('index', { title: k[0].site_name, testnet: testnet });
+    });
   });
   //var title=
 };

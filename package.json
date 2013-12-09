@@ -9,7 +9,6 @@
     "express": "3.4.6",
     "ejs": "*",
     "knex": "*",
-    "bookshelf": "*",
     "pg": "*",
     "bitcoin": "*"
   }
