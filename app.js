@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -9,6 +8,7 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
+require('./config');
 var app = express();
 
 // all environments
