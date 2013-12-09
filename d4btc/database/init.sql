@@ -25,9 +25,9 @@ create table Products
     MaxPrice decimal(8,8),
     Download varbit, --allow for null for "staging"
     CallbackUrl varchar,
-    Refundable boolean default false,
-    Staging boolean default true,
-    Deleted boolean default false
+    Refundable boolean not null default false,
+    Staging boolean not null default true,
+    Deleted boolean not null default false
 );
 
 create table ProductImages
