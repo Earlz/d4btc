@@ -9,8 +9,8 @@ Bitcoin.bitcoin = new Bitcoin.Client({ //is this safe?
 });
 
 //database connection info
-var Knex=require('knex');
-Knex.knex = Knex.initialize({
+var Bookshelf=require('bookshelf');
+Bookshelf.bookshelf = Bookshelf.initialize({
   client: 'pg',
   connection: {
     host     : '127.0.0.1',
