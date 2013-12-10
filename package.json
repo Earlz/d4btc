@@ -10,6 +10,7 @@
     "ejs": "*",
     "knex": "*",
     "pg": "*",
-    "bitcoin": "*"
+    "bitcoin": "*",
+    "async": "*"
   }
 }
