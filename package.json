@@ -11,6 +11,8 @@
     "knex": "*",
     "pg": "*",
     "bitcoin": "*",
-    "async": "*"
+    "async": "*",
+    "bluebird": "*",
+    "ejs-locals": "*"
   }
 }

@@ -7,6 +7,7 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var ejslocal=require('ejs-locals');
 
 require('./config');
 var app = express();
@@ -14,6 +15,7 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
+app.engine('ejs', ejslocal);
 app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
